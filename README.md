@@ -23,6 +23,13 @@ A simple neural network built with TensorFlow and Keras to classify synthetic da
 
 ---
 
+### 🖼️ Quick Preview
+
+![image](https://github.com/user-attachments/assets/045455c4-198f-4758-9aac-fbd679152654)
+
+
+
+---
 ### ▶️ How to Run
 
 1. Clone this repo or copy the script into a `.py` file.
