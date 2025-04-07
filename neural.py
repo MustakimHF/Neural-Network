@@ -1,37 +1,4 @@
 
-"""
-import tensorflow as tf
-import numpy as np
-
-# Set random seed for reproducibility
-np.random.seed(42)
-
-# Parameters
-n_features = 10  # Number of features in your input data
-n_classes = 3    # Number of classes in your classification task
-batch_size = 32   # Size of each batch during training
-epochs = 100      # Number of times the model will be trained on the entire dataset
-
-# Generate some sample data for demonstration
-X_data = np.random.rand(100, n_features)  # Features matrix (100 samples)
-y_data = np.random.randint(n_classes, size=100)  # Labels vector (100 samples)
-
-# Define your neural network model using Keras Sequential API
-model = tf.keras.Sequential([
-    tf.keras.layers.Input(shape=(n_features,)),
-    tf.keras.layers.Dense(64, activation='relu'),
-    tf.keras.layers.Dense(64, activation='relu'),
-    tf.keras.layers.Dense(n_classes, activation='softmax')
-])
-
-# Compile the model with an optimizer and loss function
-model.compile(optimizer='adam',
-              loss='sparse_categorical_crossentropy',
-              metrics=['accuracy'])
-
-# Train the model using the generated data
-model.fit(X_data, y_data, epochs=epochs, batch_size=batch_size)
-"""
 import tensorflow as tf
 import numpy as np
 from sklearn.model_selection import train_test_split
